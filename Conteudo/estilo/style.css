@@ -1,0 +1,221 @@
+@charset "UTF-8";
+@font-face {
+    font-family: idroid;
+    src: url('../fontes/IDroid.otf') format('opentype');
+
+}
+@font-face {
+    font-family: bebas;
+    src: url(../fontes/BebasNeue-Regular.otf) format('opentype');
+}
+
+
+:root {
+    --cor0: #abff8a;
+    --cor01: #3DDC84;
+    --cor02: #78ff42ad;
+    --cor03: #00ff4cb0;
+    --cor04: #063D1E;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-image: linear-gradient(var(--cor01), var(--cor04));
+    padding: 30px;
+}
+
+header > h1 {
+    margin-bottom: 20px;
+    color: white;
+    font-family: bebas, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 3px 3px 0px black;
+}
+
+header > p {
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 500px;
+    margin: auto;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.479);
+}
+
+nav {
+    background-color: var(--cor04);
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.315);
+
+}
+
+nav > a {
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: normal;
+    text-align: center;
+    transition-duration: 1s;
+}
+
+nav>a:hover {
+    background-color: var(--cor0);
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body {
+    background-color: var(--cor0);
+}
+
+main {
+    background-color: white;
+    max-width: 800px;
+    min-width: 320px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main img.droids {
+    display: block;
+    margin: auto;
+}
+
+main img.irina {
+    display: block;
+    margin: auto;
+}
+
+div.video {
+    background-color: #063D1E;
+    margin: 0px -15px 30px -15px;
+    padding: 20px;
+    padding-bottom: 57.5%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+h1#principal {
+    font-family: idroid;
+    font-weight: boldl;
+    margin: 21px;
+    color: var(--cor04);
+}
+
+h2 {
+    font-family: idroid;
+    font-weight: bold;
+    margin: 21px;
+    color: var(--cor04);
+    background-image: linear-gradient(to right, var(--cor0), transparent);
+}
+
+p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 30px;
+    padding: 10px;
+}
+
+main a {
+    color: var(--cor04);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+strong {
+    color: var(--cor04);
+}
+
+a.externo::after {
+    content: '\00a0\1F517';
+}
+
+aside {
+    background-color: var(--cor03);
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.377);
+}
+
+aside h3 {
+    background-color: var(--cor04);
+    margin: 21px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+ aside p {
+    padding-top: 20px;
+    padding-bottom: 10px;
+ }
+
+ul {
+    padding: 5px;
+    margin: 0px 0px 0px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    font-weight: bold;
+    columns: 2;
+    list-style-type: '\2714\00a0\00a0';
+    list-style-position: inside;
+    padding: 20px;
+}
+
+footer > p {
+    background-color: var(--cor04);
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+
+
+footer > p > a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: bebas;
+    src: url(../fontes/BebasNeue-Regular.otf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0: #abff8a;
+    --cor01: #3DDC84;
+    --cor02: #78ff42ad;
+    --cor03: #00ff4cb0;
+    --cor04: #063D1E;
+}
+
+header {
+    background-image: linear-gradient(var(--cor01), var(--cor04));
+    padding: 30px;
+}
+
+header>h1 {
+    color: white;
+    margin-bottom: 20px;
+    font-family: bebas, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 3px 3px 0px black;
+
+}
+
+header>p {
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 500px;
+    margin: auto;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.479);
+}
+
+nav {
+    background-color: var(--cor04);
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.315);
+}
+
+nav>a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    padding: 10px;
+}
+
+nav>a:hover {
+    background-color: var(--cor0);
+    color: var(--cor04);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    transition-duration: 1s;
+}
+
+body {
+    background-color: var(--cor0);
+}
+
+main {
+    background-color: white;
+    max-width: 800px;
+    min-width: 320px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    background-image: linear-gradient(to right, var(--cor0), transparent);
+    margin: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+
+p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+img.pequena {
+    max-width: 400px;
+    display: block;
+    margin: auto;
+}
+
+footer>p {
+    background-color: var(--cor04);
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer>p>a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer>p>a:hover {
+    text-decoration: underline;
+}
